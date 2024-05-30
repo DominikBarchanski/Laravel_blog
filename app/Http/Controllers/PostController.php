@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -56,4 +56,3 @@ class PostController extends Controller
         return redirect()->route('posts.index');
     }
 }
-

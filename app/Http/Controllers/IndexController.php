@@ -8,6 +8,6 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('index'); // Ensure index.blade.php exists in resources/views
+        return view('index'); // Ensure resources/views/index.blade.php exists
     }
 }

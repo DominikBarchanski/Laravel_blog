@@ -1,5 +1,10 @@
+@extends('layouts.app')
 
-<h1>Welcome</h1>
-<a href="{{ route('login') }}">Login</a>
-<a href="{{ route('register') }}">Register</a>
-<a href="{{ route('posts.index') }}">View Blog Posts</a>
+@section('content')
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+        <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
+        <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
+        <a href="{{ route('posts.index') }}" class="btn btn-primary">View Blog Posts</a>
+    </div>
+@endsection

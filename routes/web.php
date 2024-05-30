@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 // Index route
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
+// Test route
+Route::get('/test', function () {
+    return 'Test route is working!';
+});
+
 // Post resource routes
 Route::resource('posts', PostController::class);
 
